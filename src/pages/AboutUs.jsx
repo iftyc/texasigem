@@ -19,13 +19,26 @@ const members = [
   },
 ]
 
-function AboutUs() {
+export default function AboutUs() {
   return (
     <section className="page">
       <h1>About Us</h1>
-      <p>This is placeholder content for the About Us tab. Tell your story here.</p>
+      <p style={{ color: '#475569', lineHeight: 1.75, marginTop: '0.5rem' }}>
+        Texas iGEM Collective is the first community iGEM team in Texas &mdash; a registered
+        501(c)(3) nonprofit. We bring together middle and high school students for hands-on
+        experience in biotechnology, computational biology, entrepreneurship, and science
+        communication, culminating in a trip to the international iGEM Grand Jamboree.
+        Our 2026 project, <strong>NourishGut</strong>, targets childhood malnutrition using
+        engineered probiotics.
+      </p>
 
-      <h2>Our Team</h2>
+      <h2 style={{ marginTop: '2rem', marginBottom: '0.25rem', fontSize: '1.2rem', fontWeight: 700, color: '#0d1b2a' }}>
+        Our Team
+      </h2>
+      <p style={{ color: '#64748b', fontSize: '0.9rem', marginBottom: 0 }}>
+        Placeholder team members below &mdash; replace with real profiles.
+      </p>
+
       <div className="members-grid">
         {members.map((member) => (
           <div className="member-card" key={member.name}>
@@ -39,5 +52,3 @@ function AboutUs() {
     </section>
   )
 }
-
-export default AboutUs
